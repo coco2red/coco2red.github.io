@@ -882,7 +882,7 @@
 ---
 
 ## Detailed Day 9: Building a Simple Django App
-## refer to other md file for step 1 and 2
+## [Refer to other md file for step 1 and 2](https://github.com/coco2red/Failed/blob/main/DayNine.md)
 
 ### Step 3: Test Your Application (10 minutes)
 - **Step 3.1: Run Your Server**
