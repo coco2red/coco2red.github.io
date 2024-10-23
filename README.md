@@ -1,5 +1,4 @@
-# coco2red.github.io
-# coco2red Python Shinobi
+# Python Shinobi (Coco2rRed) 
 
 ## Course Outline: Git, Flask, and Django
 ### by RED_KWIK_KWIK
@@ -948,11 +947,13 @@
         <main>
             <h2>All Toys</h2>
             <ul>
-                {% for toy in toys %}
-                    <li>{{ toy.name }} ({{ toy.toy_type }})</li>
-                {% empty %}
+                {% if toys.size > 0 %}
+                    {% for toy in toys %}
+                        <li>{{ toy.name }} ({{ toy.toy_type }})</li>
+                    {% endfor %}
+                {% else %}
                     <li>No toys in your collection yet!</li>
-                {% endfor %}
+                {% endif %}
             </ul>
             <a href="/toys/add">Add a New Toy</a>
         </main>
